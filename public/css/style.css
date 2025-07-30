@@ -9,6 +9,10 @@ input {
   margin-top: 5px;
 }
 
+text {
+  background-color: #e74c3c;
+}
+
 label {
   font-size: 12px;
   font-weight: bold;
@@ -40,6 +44,8 @@ label {
 }
 
 /***** components *****/
+
+
 
 /***** typeography *****/
 
@@ -76,6 +82,8 @@ body {
 }
 
 /***** body *****/
+
+
 
 /**** news-card ****/
 
@@ -123,6 +131,7 @@ body {
 
 /**** news-card ****/
 
+
 /**** success-card ****/
 
 .success-card {
@@ -141,6 +150,7 @@ body {
 }
 
 /**** success-card ****/
+
 
 /****** media query ******/
 

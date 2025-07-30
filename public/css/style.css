@@ -27,6 +27,14 @@ label {
   border: none;
 }
 
+.dismiss-btn {
+  padding: 15px 107px;
+  background-color: #242742;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
 .subscribe-btn:focus {
   background: linear-gradient( to right,#FF6A3A, #FF527B);
 }
@@ -115,17 +123,40 @@ body {
 
 /**** news-card ****/
 
-/**** media query ****/
+/**** success-card ****/
+
+.success-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 150px 0px 70px 24px;
+  background-color: #fff;
+}
+
+
+.success-content {
+  padding-bottom: 295px;
+}
+
+/**** success-card ****/
+
+/****** media query ******/
 
 @media screen and (min-width:768px) {
+
+  /*** components ***/
 
   input {
     width: 92%;
   }
 
-  .error-message {
-    margin-right: 5px;
+  .dismiss-btn {
+    width: 100%;
   }
+
+  /*** components ***/
+
+ 
 
   h1 {
     font-size: 56px;
@@ -182,23 +213,60 @@ body {
     margin: 4px;
   }
 
+  .error-message {
+    margin-right: 5px;
+  }
+
 
   .sign-up-mobile-img {display: none;}
   .sign-up-tablet-img {display: block;}
 
  /**** news-card ****/
 
+ /***** success-card *****/
+
+ .success-card {
+    width: 50%;
+    padding: 50px;
+    border-radius: 36px;
+ }
+
+ .success-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+ }
+
 }
 
 @media screen and (min-width:1440px) {
+
+  /**** components ****/
 
   input {
     width: 85%;
   }
 
-  .subscribe-btn {
+   .subscribe-btn {
     width: 96%;
   }
+
+  .dismiss-btn {
+    width: 100%;
+    
+  }
+  .dismiss-btn:focus {
+    background: linear-gradient(to right, #FF6A3A, #FF527B);
+    box-shadow: 1px 5px 12px #FF527B;
+  }
+
+  /**** components ****/
+
+  h1 {
+    margin-top: 0px;
+  }
+ 
   
   body {
     margin: 132px;
@@ -229,6 +297,21 @@ body {
   .check-list {
     margin-bottom: 10px;
   }
+
+  /**** success-card ****/
+
+  .success-card {
+    padding: 59px;
+    width: 35%;
+  }
+
+  .success-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+
 
   .sign-up-mobile-img{display: none;}
   .sign-up-tablet-img{display: none;}

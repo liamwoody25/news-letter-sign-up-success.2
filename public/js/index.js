@@ -1,7 +1,7 @@
 const submitBtn = document.querySelector('.subscribe-btn');
 const emailInput = document.querySelector('#email-input')
 const invalidMessage = document.querySelector('.error-message')
-const newsContainer = document.querySelector('.news-card.hide')
+const newsContainer = document.querySelector('.news-card')
 const showsuccess = document.querySelector('.success-card')
 
 
@@ -17,9 +17,9 @@ function invalidEmail() {
 
 function validEmail() {
   if (emailInput.value === 'email@company.com') {
-   
-  } else {
     
+  } else {
+   
   }
 }
 

@@ -9,6 +9,7 @@ input {
   margin-top: 5px;
 }
 
+
 text {
   background-color: #e74c3c;
 }
@@ -92,6 +93,9 @@ body {
   flex-wrap: wrap;
 }
 
+.news-card.hide {
+  display: none;
+}
 
 .card-content {
   padding: 32px 25px;

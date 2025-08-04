@@ -1,8 +1,8 @@
 const submitBtn = document.querySelector('.subscribe-btn');
 const emailInput = document.querySelector('#email-input')
 const invalidMessage = document.querySelector('.error-message')
-const newsContainer = document.querySelector('.news-card')
-const showsuccess = document.querySelector('.success-card')
+const newsContainer = document.querySelector('.news-card.active')
+const showsuccess = document.querySelector('.success-card.hide')
 
 
 function invalidEmail() {
@@ -10,16 +10,18 @@ function invalidEmail() {
     emailInput.style.border = '1px solid #e74c3c'
     emailInput.style.color = '#e74c3c'
     invalidMessage.style.display = 'block'
+    newsContainer.classList.add('active')
   } else {
     invalidMessage.style.display = 'none'
+    showsuccess.classList.remove('hide')
   }
 }
 
 function validEmail() {
   if (emailInput.value === 'email@company.com') {
-    
+    showsuccess.classList.add('active')
   } else {
-   
+    newsContainer.classList.remove('hide')
   }
 }
 

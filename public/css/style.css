@@ -30,7 +30,10 @@ label {
   border-radius: 8px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
+
+
 
 .dismiss-btn {
   padding: 15px 107px;
@@ -40,7 +43,7 @@ label {
   border: none;
 }
 
-.subscribe-btn:focus {
+.subscribe-btn:hover {
   background: linear-gradient( to right,#FF6A3A, #FF527B);
 }
 
@@ -172,6 +175,10 @@ body {
     width: 92%;
   }
 
+  .subscribe-btn:hover {
+
+  }
+
   .dismiss-btn {
     width: 100%;
   }
@@ -187,6 +194,7 @@ body {
   p {
     color: #242742;
     margin-top: 5px;
+    margin-bottom: 25px;
   }
 
   /**** body ****/
@@ -216,7 +224,6 @@ body {
     box-shadow: 1px 4px 15px black;
   }
 
-  .news-card
 
 
   .card-content {
@@ -284,7 +291,7 @@ body {
     width: 100%;
     
   }
-  .dismiss-btn:focus {
+  .dismiss-btn:active {
     background: linear-gradient(to right, #FF6A3A, #FF527B);
     box-shadow: 1px 5px 12px #FF527B;
   }
@@ -312,7 +319,7 @@ body {
     justify-content: space-between;
     flex-direction: row-reverse;
   }
-  
+
 
   .card-content {
     display: flex;
